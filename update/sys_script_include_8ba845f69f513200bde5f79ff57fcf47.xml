@@ -3,8 +3,10 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_58872_needit.validateEmailAddress</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>validateEmailAddress</name>
         <script><![CDATA[function validateEmailAddress(emailStr){
     // Use JavaScript coercion to guarantee emailStr is a string

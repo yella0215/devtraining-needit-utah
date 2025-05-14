@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=795000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_story_in_jira</internal_name>
+        <label_cache>[{"name":"5e407168-d0ca-423d-8845-2f3db42fda16.id","label":"1 - Jira Custom Action➛ID","reference_display":"ID","type":"string","base_type":"string","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"acafbce6-e780-4e95-a585-e8497e14f499"}},{"name":"5e407168-d0ca-423d-8845-2f3db42fda16.key","label":"1 - Jira Custom Action➛key","reference_display":"key","type":"string","base_type":"string","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["comments","work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"3ce3c686-6259-4e52-bbe7-d3d1d702b002"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Story Record","reference":"rm_story","reference_display":"Story","type":"reference","base_type":"reference","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["record"]},"attributes":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Story Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"rm_story","column_name":"description","usedInstances":{"5287ae48-77a6-4b57-8558-c32883f6236e":["description"],"5e407168-d0ca-423d-8845-2f3db42fda16":["description"]}},{"name":"Created_1.current.short_description","label":"Trigger - Record Created➛Story Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"rm_story","column_name":"short_description","usedInstances":{"5287ae48-77a6-4b57-8558-c32883f6236e":["short_description"],"5e407168-d0ca-423d-8845-2f3db42fda16":["short_description"]}}]</label_cache>
+        <master_snapshot>146fe46883a42210cc8c9780deaad33a</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Create story in Jira </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>856fe46883a42210cc8c9780deaad3e1</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:54:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98eca82483a42210cc8c9780deaad386</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create story in Jira </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_98eca82483a42210cc8c9780deaad386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:45</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=98eca82483a42210cc8c9780deaad386"/>
+    <sys_variable_value action="delete_multiple" query="document_key=98eca82483a42210cc8c9780deaad386"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="rm_story">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>856fe46883a42210cc8c9780deaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:24</sys_updated_on>
+        <table>rm_story</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>98eca82483a42210cc8c9780deaad386</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:07:45</sys_created_on>
+        <sys_id>d7ef64a883a42210cc8c9780deaad397</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:45</sys_updated_on>
+        <trigger display_value="">856fe46883a42210cc8c9780deaad3e1</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=98eca82483a42210cc8c9780deaad386^sys_idNOT INd7ef64a883a42210cc8c9780deaad397"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=98eca82483a42210cc8c9780deaad386"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=98eca82483a42210cc8c9780deaad386^sys_idNOT IN5ceca82483a42210cc8c9780deaad388"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>98eca82483a42210cc8c9780deaad386</id>
+        <name>Create story in Jira </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:54:25</sys_created_on>
+        <sys_id>5ceca82483a42210cc8c9780deaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 09:54:25</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5ceca82483a42210cc8c9780deaad388"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=98eca82483a42210cc8c9780deaad386^sys_idNOT IN015d206483a42210cc8c9780deaad3df,4d5da86483a42210cc8c9780deaad34f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</model>
+        <model_id>98eca82483a42210cc8c9780deaad386</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:56:23</sys_created_on>
+        <sys_id>015d206483a42210cc8c9780deaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 09:56:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=015d206483a42210cc8c9780deaad3df"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</model>
+        <model_id>98eca82483a42210cc8c9780deaad386</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:56:24</sys_created_on>
+        <sys_id>4d5da86483a42210cc8c9780deaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 09:56:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4d5da86483a42210cc8c9780deaad34f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=98eca82483a42210cc8c9780deaad386^sys_idNOT IN1d5da86483a42210cc8c9780deaad354"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:56:24</sys_created_on>
+        <sys_id>1d5da86483a42210cc8c9780deaad354</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:02:17</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYXW/bNhT9K4KeNsAD9GHHcd66JMUCdA1me9tDkAmURNrEaNITKaVukf++S33YskQ5/kqTvhQ1SfGee3juuWQevtkMhZjZV/YUhQzbPZtyhROO2HS1xDCs9HDA0ULPLRCPkRLJyr5SSYp7tkhinNhXbs/OEEvxZCXvYvgIluZflJ/b5TT8ThaBzDfo2TGVS4ZWf5Uzk3I4mlMWJ5jbVw+PPXuJEthI6SDfGlNUR4pIhEYediLf9T3PcbzLvhte+KHrxT7CjgMbNhNsIFOGPDdp4S8K8xhDKIKYxAYKEozie85W6xVzYLDgYIG+SPoVdr909DqCAXuEi7loLmiE75eKCl6MFICKScHSBf9cANVUYYJSpiqqYCSVOIjxUmPT0crQZDIXT+Mq0EfK8zTKSSYixNa/kFIJDVOFpWaWUAYcBwUJUqRJDnN8e30/vgn+/jC9/u12HIxvJ9Px3fX09sZ+zvMJ/kv1jgXCEktQpPO8Pt+PFDN9UnIuEgWYZZTQIuueXfz/Q6Rohktkz72NJK8Fj2m5tCHLqJqS27Iss6sO0HE6lRnVNq/U+c/tH21hFoOHyfLiAqEYow5ZhqQmy3qSBmjKkG89u10CLUf2UWjfcV5bo0W5HC3RhYgxu9lsZ8PkbAaipXyZKk3LE+JKBkoEKI6DGmF6KWB6SbNFbs8vqjJJOXwQrIlvazOnbc3fJyoB7gMUWcVNviXMk0/lluOUWwJOCP6xojQBapRV+RO5W6BZySiZYIYjVTtt8qes//qdSkn5rIZ6HTTnoBVzHQ5UY1UpFbHlicEfjyzMNr9Zg7dGgR5cna5LSIiJ5wx1bbqOHxLXGToDRGLfcSKvVp1tMJ0oVeP0X6VKO2pU5gJje8ipyWWJ0qkrfC9pZNu6qrLVx15awfV5oLlnguZpaA1L8w/ytLX+iuGbbRnuSu3M7RrFGYIv4n2tbU9XI0w8gZ0e4Wghiv6dJSLlcdNi9J4W5dZmhfVTyd/PZ3Q3IhK8G8D2ijfytQ3DlUYRN9yFD3Y0n7jhCPexA0bmg4eFg9EojJBHyPBiiD234WgbGEZs78vJXlBQZpJgl6sZxZCZNHSAn50AsOVtBwM83dVKBRo9rZj7MdzraY55AFCTgGl/apnYjNEYV3NHV3ArSrap2VOrmFyOooE7HEZDeDFAFZM+DpHb9wZoNLzwLweNKm5B2QVTGUj4Lu8IuZI5kHf35n1NGUqslG4Zh3dSDpfK/BtUBKl1M829lZuESKzPgv9yt1lnTTA0qfzFeK6Wug8K2CyxXhdGKNS81dMh9K8wvhVa3wU7WHnLp0xDD9l2Wic/ZXD/cjAivtkyyMhkGRsw3TDfzxVgT9VnnfVjugvsK+LMWAudzfsIWTb0UO/qO64d5yLFPTsp3uuR4p981amKrvP9dgzYH6gt5ReCU3qTjokDQeqGfCMsmLAgiEWJVf5VDp7j4cpScwyUMrjTQkBLRz/VieudoQ1lreDvC6S4Jbc6FAxb5c3nTZtP49TP+/LE8RANBn7HnXXUfHmaAL2A9/20ooOVnpkKZ2c/Omzf5p7GjlST4fbR79lrzpq1ueGclrWx5byU9enNZNe72YDinbaJx/8B7/cT2wMeAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=98eca82483a42210cc8c9780deaad386^sys_idNOT IN5faee0a083a42210cc8c9780deaad31b,615f646883a42210cc8c9780deaad35f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Jira Custom Action">690da06483a42210cc8c9780deaad374</action_type>
+        <action_type_parent display_value="Jira Custom Action">346c08e483e02210cc8c9780deaad350</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>690da06483a42210cc8c9780deaad374</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:02:17</sys_created_on>
+        <sys_id>5faee0a083a42210cc8c9780deaad31b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:08:06</sys_updated_on>
+        <ui_id>5e407168-d0ca-423d-8845-2f3db42fda16</ui_id>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0PPtvFXYjtvI6Ew2FbYur6UYm6k60Qgy64sp81C/vuuYift2lGybk9jj7qf5xzdc7NjUrAZm0ahgHCa5gmkcRyFnOe8yPJQIIBIspx5TEONVNmtG2NLgR03srWy0ZTagOpdbrebGwSLoowC3huD2gYv6vd76hCyaxVsr3+7ka+lEpRns5tbj7VgCJVFw2a7Z6lzaSlYoqLSr27du8VPvF6hbLftIWWN1Kvx/fE46hhsjHDQIo/hg0UtkDBVoDr0WA1agG3M9hQhAcSlVo+BtdSWpjFX/NDJ77QvD8PQVVZIPDkO2dPzCpYKF4OyQ6pagAWC03Pbm7GcrxvJsRtUElhBr+z8aWwouByYHlqsGzx2N6qv9edBGHYacPxIivQdklato+vwj2Qq0vf+yxHphdQHZcakajio0wss6bfsrcOzY728eib1EHkhNiqsaWNZQ9tSpGxNs5GHLQS6DlaKHkGlmnv3k3KlA+COYUDfAMEFxReH8DUY6eh+ojHU7NZ90/Kuxw/uoMQkxCRJUl9EIvTTacj9Is4mvsgmFc/psnhesL3Hum03V9B1j0LRL5V3vaM5yDYKVA4au5bDdb0nUBsctdh7oz2z4rU7ppWnWz3fmG+w5J+Z8QwSRzP+0oZvN2D834D/jAGjZTZNs8KP46Ly0yya+iAg83mYVCIvMMI4/YsGvP0BidAIEiEHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:10</sys_created_on>
+        <sys_id>615f646883a42210cc8c9780deaad35f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:08:06</sys_updated_on>
+        <ui_id>d72c2d51-f56b-4576-8324-5cfea84870ef</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf0yhf7UrfJiokNAYSTLwAihz7BiwcJ7MdIIv633eTuG0EjBUJaULrm++Xzzk5t75qieBkSRLgQXgQzlkcxnEUBNEiCbN5nIURjylASDyiaAFYqYGVmuP5gcq6C7TtoQZqgaehz2qtQdn1GvNcmErS5tKVYYTdCckxT5ZXNx6pqMaJFjRZts9S+0KSNAOJpecbTM8x2qbqzrxkdYG4UrEJnrjOlctMjleYwaYOThh4BJ4sKA4IJKfSgEcKqji1pW7I0uoaA0ianynZbCvuhLID0YI+GfELb06Cri4HZMacCNvjD5pJWA0iDal8RS29wOnM1nqrWSkYmEEXDjmtpT0cx4aCs8qKUg0tthvsuktZF+p0UIVsB4y+SW0g5VB1XDv0A7X84q58PN8APRKql8XRlCWjcnui1mqR1baD0xKQ0Otc0KoS6jatdPkg+maEUvi3Eg9+LstHvNOIW+VT1uH2UVnqH2F81YcvqRYdie84BpvXHjGNOZTUmB0V1DH9WXdIBmKOQtqr0EuQ9m7ompkWlf2KVz2AA772nPGz2VsuYwc7U41m7syvi9T0pnjh91Hmfb7fA9HG972F/oDQWf9F7GTcOzkdEs74sw8z/uKzGd9R+fTO/5vfg+jNf9WRm3qLm5HXH0t9n6oSCV/XQRDzb9BMlm07gyT4Es4XUx4wOk2imE8Xi2Q2jfKYZ0mUcxrO/Xto1mvvWh2vJsvJnj2Cv/aO/CMU79vhPVTe7PCRAMnNK7JvFhgKpG8hHT7DsyV2ycmlS25fsA/b5HAe9L9Pts//zUN28xsBRq+RwwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=98eca82483a42210cc8c9780deaad386"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386^sys_idNOT IN415da86483a42210cc8c9780deaad34f,9d5da86483a42210cc8c9780deaad351"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:56:24</sys_created_on>
+        <sys_id>415da86483a42210cc8c9780deaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 09:56:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 09:56:24</sys_created_on>
+        <sys_id>9d5da86483a42210cc8c9780deaad351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 09:56:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_98eca82483a42210cc8c9780deaad386"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_98eca82483a42210cc8c9780deaad386"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_98eca82483a42210cc8c9780deaad386"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>create_story_in_jira</internal_name>
+        <label_cache>[{"name":"5e407168-d0ca-423d-8845-2f3db42fda16.id","label":"1 - Jira Custom Action➛ID","reference_display":"ID","type":"string","base_type":"string","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"acafbce6-e780-4e95-a585-e8497e14f499"}},{"name":"5e407168-d0ca-423d-8845-2f3db42fda16.key","label":"1 - Jira Custom Action➛key","reference_display":"key","type":"string","base_type":"string","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["comments","work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"3ce3c686-6259-4e52-bbe7-d3d1d702b002"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Story Record","reference":"rm_story","reference_display":"Story","type":"reference","base_type":"reference","usedInstances":{"d72c2d51-f56b-4576-8324-5cfea84870ef":["record"]},"attributes":{}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Story Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"rm_story","column_name":"description","usedInstances":{"5287ae48-77a6-4b57-8558-c32883f6236e":["description"],"5e407168-d0ca-423d-8845-2f3db42fda16":["description"]}},{"name":"Created_1.current.short_description","label":"Trigger - Record Created➛Story Record➛Short description","reference":"","reference_display":"Short description","type":"string","base_type":"string","parent_table_name":"rm_story","column_name":"short_description","usedInstances":{"5287ae48-77a6-4b57-8558-c32883f6236e":["short_description"],"5e407168-d0ca-423d-8845-2f3db42fda16":["short_description"]}}]</label_cache>
+        <master>true</master>
+        <name>Create story in Jira </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create story in Jira ">98eca82483a42210cc8c9780deaad386</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>146fe46883a42210cc8c9780deaad33a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:43</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=146fe46883a42210cc8c9780deaad33a^sys_idNOT IN946fe46883a42210cc8c9780deaad33b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>146fe46883a42210cc8c9780deaad33a</id>
+        <name>Create story in Jira </name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:21</sys_created_on>
+        <sys_id>946fe46883a42210cc8c9780deaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:21</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=946fe46883a42210cc8c9780deaad33b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=146fe46883a42210cc8c9780deaad33a^sys_idNOT IN1c6fe46883a42210cc8c9780deaad33c,646fe46883a42210cc8c9780deaad380"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create story in Jira ">146fe46883a42210cc8c9780deaad33a</model>
+        <model_id>146fe46883a42210cc8c9780deaad33a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:21</sys_created_on>
+        <sys_id>1c6fe46883a42210cc8c9780deaad33c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1c6fe46883a42210cc8c9780deaad33c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Create story in Jira ">146fe46883a42210cc8c9780deaad33a</model>
+        <model_id>146fe46883a42210cc8c9780deaad33a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:22</sys_created_on>
+        <sys_id>646fe46883a42210cc8c9780deaad380</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=646fe46883a42210cc8c9780deaad380"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=146fe46883a42210cc8c9780deaad33a^sys_idNOT INf06fe46883a42210cc8c9780deaad3a4"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Create story in Jira ">146fe46883a42210cc8c9780deaad33a</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:23</sys_created_on>
+        <sys_id>f06fe46883a42210cc8c9780deaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:23</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VYXW/bNhT9K4KeNsAD9GHHcd66JMUCdA1me9tDkAmURNrEaNITKaVukf++S33YskQ5/kqTvhQ1SfGee3juuWQevtkMhZjZV/YUhQzbPZtyhROO2HS1xDCs9HDA0ULPLRCPkRLJyr5SSYp7tkhinNhXbs/OEEvxZCXvYvgIluZflJ/b5TT8ThaBzDfo2TGVS4ZWf5Uzk3I4mlMWJ5jbVw+PPXuJEthI6SDfGlNUR4pIhEYediLf9T3PcbzLvhte+KHrxT7CjgMbNhNsIFOGPDdp4S8K8xhDKIKYxAYKEozie85W6xVzYLDgYIG+SPoVdr909DqCAXuEi7loLmiE75eKCl6MFICKScHSBf9cANVUYYJSpiqqYCSVOIjxUmPT0crQZDIXT+Mq0EfK8zTKSSYixNa/kFIJDVOFpWaWUAYcBwUJUqRJDnN8e30/vgn+/jC9/u12HIxvJ9Px3fX09sZ+zvMJ/kv1jgXCEktQpPO8Pt+PFDN9UnIuEgWYZZTQIuueXfz/Q6Rohktkz72NJK8Fj2m5tCHLqJqS27Iss6sO0HE6lRnVNq/U+c/tH21hFoOHyfLiAqEYow5ZhqQmy3qSBmjKkG89u10CLUf2UWjfcV5bo0W5HC3RhYgxu9lsZ8PkbAaipXyZKk3LE+JKBkoEKI6DGmF6KWB6SbNFbs8vqjJJOXwQrIlvazOnbc3fJyoB7gMUWcVNviXMk0/lluOUWwJOCP6xojQBapRV+RO5W6BZySiZYIYjVTtt8qes//qdSkn5rIZ6HTTnoBVzHQ5UY1UpFbHlicEfjyzMNr9Zg7dGgR5cna5LSIiJ5wx1bbqOHxLXGToDRGLfcSKvVp1tMJ0oVeP0X6VKO2pU5gJje8ipyWWJ0qkrfC9pZNu6qrLVx15awfV5oLlnguZpaA1L8w/ytLX+iuGbbRnuSu3M7RrFGYIv4n2tbU9XI0w8gZ0e4Wghiv6dJSLlcdNi9J4W5dZmhfVTyd/PZ3Q3IhK8G8D2ijfytQ3DlUYRN9yFD3Y0n7jhCPexA0bmg4eFg9EojJBHyPBiiD234WgbGEZs78vJXlBQZpJgl6sZxZCZNHSAn50AsOVtBwM83dVKBRo9rZj7MdzraY55AFCTgGl/apnYjNEYV3NHV3ArSrap2VOrmFyOooE7HEZDeDFAFZM+DpHb9wZoNLzwLweNKm5B2QVTGUj4Lu8IuZI5kHf35n1NGUqslG4Zh3dSDpfK/BtUBKl1M829lZuESKzPgv9yt1lnTTA0qfzFeK6Wug8K2CyxXhdGKNS81dMh9K8wvhVa3wU7WHnLp0xDD9l2Wic/ZXD/cjAivtkyyMhkGRsw3TDfzxVgT9VnnfVjugvsK+LMWAudzfsIWTb0UO/qO64d5yLFPTsp3uuR4p981amKrvP9dgzYH6gt5ReCU3qTjokDQeqGfCMsmLAgiEWJVf5VDp7j4cpScwyUMrjTQkBLRz/VieudoQ1lreDvC6S4Jbc6FAxb5c3nTZtP49TP+/LE8RANBn7HnXXUfHmaAL2A9/20ooOVnpkKZ2c/Omzf5p7GjlST4fbR79lrzpq1ueGclrWx5byU9enNZNe72YDinbaJx/8B7/cT2wMeAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=146fe46883a42210cc8c9780deaad33a^sys_idNOT IN3c6fe46883a42210cc8c9780deaad3a3,f86fe46883a42210cc8c9780deaad3a2"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create story in Jira ">146fe46883a42210cc8c9780deaad33a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:23</sys_created_on>
+        <sys_id>3c6fe46883a42210cc8c9780deaad3a3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:43</sys_updated_on>
+        <ui_id>d72c2d51-f56b-4576-8324-5cfea84870ef</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf0yhf7UrfJiokNAYSTLwAihz7BiwcJ7MdIIv633eTuG0EjBUJaULrm++Xzzk5t75qieBkSRLgQXgQzlkcxnEUBNEiCbN5nIURjylASDyiaAFYqYGVmuP5gcq6C7TtoQZqgaehz2qtQdn1GvNcmErS5tKVYYTdCckxT5ZXNx6pqMaJFjRZts9S+0KSNAOJpecbTM8x2qbqzrxkdYG4UrEJnrjOlctMjleYwaYOThh4BJ4sKA4IJKfSgEcKqji1pW7I0uoaA0ianynZbCvuhLID0YI+GfELb06Cri4HZMacCNvjD5pJWA0iDal8RS29wOnM1nqrWSkYmEEXDjmtpT0cx4aCs8qKUg0tthvsuktZF+p0UIVsB4y+SW0g5VB1XDv0A7X84q58PN8APRKql8XRlCWjcnui1mqR1baD0xKQ0Otc0KoS6jatdPkg+maEUvi3Eg9+LstHvNOIW+VT1uH2UVnqH2F81YcvqRYdie84BpvXHjGNOZTUmB0V1DH9WXdIBmKOQtqr0EuQ9m7ompkWlf2KVz2AA772nPGz2VsuYwc7U41m7syvi9T0pnjh91Hmfb7fA9HG972F/oDQWf9F7GTcOzkdEs74sw8z/uKzGd9R+fTO/5vfg+jNf9WRm3qLm5HXH0t9n6oSCV/XQRDzb9BMlm07gyT4Es4XUx4wOk2imE8Xi2Q2jfKYZ0mUcxrO/Xto1mvvWh2vJsvJnj2Cv/aO/CMU79vhPVTe7PCRAMnNK7JvFhgKpG8hHT7DsyV2ycmlS25fsA/b5HAe9L9Pts//zUN28xsBRq+RwwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Jira Custom Action">690da06483a42210cc8c9780deaad374</action_type>
+        <action_type_parent display_value="Jira Custom Action">346c08e483e02210cc8c9780deaad350</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>690da06483a42210cc8c9780deaad374</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create story in Jira ">146fe46883a42210cc8c9780deaad33a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:23</sys_created_on>
+        <sys_id>f86fe46883a42210cc8c9780deaad3a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:23</sys_updated_on>
+        <ui_id>5e407168-d0ca-423d-8845-2f3db42fda16</ui_id>
+        <values>H4sIAAAAAAAA/+1TXWvbMBT9K0PPtvFXYjtvI6Ew2FbYur6UYm6k60Qgy64sp81C/vuuYift2lGybk9jj7qf5xzdc7NjUrAZm0ahgHCa5gmkcRyFnOe8yPJQIIBIspx5TEONVNmtG2NLgR03srWy0ZTagOpdbrebGwSLoowC3huD2gYv6vd76hCyaxVsr3+7ka+lEpRns5tbj7VgCJVFw2a7Z6lzaSlYoqLSr27du8VPvF6hbLftIWWN1Kvx/fE46hhsjHDQIo/hg0UtkDBVoDr0WA1agG3M9hQhAcSlVo+BtdSWpjFX/NDJ77QvD8PQVVZIPDkO2dPzCpYKF4OyQ6pagAWC03Pbm7GcrxvJsRtUElhBr+z8aWwouByYHlqsGzx2N6qv9edBGHYacPxIivQdklato+vwj2Qq0vf+yxHphdQHZcakajio0wss6bfsrcOzY728eib1EHkhNiqsaWNZQ9tSpGxNs5GHLQS6DlaKHkGlmnv3k3KlA+COYUDfAMEFxReH8DUY6eh+ojHU7NZ90/Kuxw/uoMQkxCRJUl9EIvTTacj9Is4mvsgmFc/psnhesL3Hum03V9B1j0LRL5V3vaM5yDYKVA4au5bDdb0nUBsctdh7oz2z4rU7ppWnWz3fmG+w5J+Z8QwSRzP+0oZvN2D834D/jAGjZTZNs8KP46Ly0yya+iAg83mYVCIvMMI4/YsGvP0BidAIEiEHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=146fe46883a42210cc8c9780deaad33a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a^sys_idNOT INb46fe46883a42210cc8c9780deaad39d,ec6fe46883a42210cc8c9780deaad37d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:23</sys_created_on>
+        <sys_id>b46fe46883a42210cc8c9780deaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:23</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:22</sys_created_on>
+        <sys_id>ec6fe46883a42210cc8c9780deaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:05:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_146fe46883a42210cc8c9780deaad33a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_146fe46883a42210cc8c9780deaad33a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_146fe46883a42210cc8c9780deaad33a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>98eca82483a42210cc8c9780deaad386</sys_id>
+        <latest_snapshot>146fe46883a42210cc8c9780deaad33a</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch0-07-16-2024_07-27-2024_1019.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=98eca82483a42210cc8c9780deaad386^sys_idNOT INc56fe46883a42210cc8c9780deaad3e3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"c56fe46883a42210cc8c9780deaad3e3","name":"plan","plan_signature":null}}</plan>
+        <plan_id>98eca82483a42210cc8c9780deaad386</plan_id>
+        <snapshot>6000f4a883a42210cc8c9780deaad3fd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-24 10:05:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c56fe46883a42210cc8c9780deaad3e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-24 10:07:45</sys_updated_on>
+        <trigger display_value="">856fe46883a42210cc8c9780deaad3e1</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=98eca82483a42210cc8c9780deaad386"/>
+</record_update>
